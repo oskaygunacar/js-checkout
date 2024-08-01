@@ -1,0 +1,218 @@
+body {
+    margin:0;
+    padding: 0;
+    background-color: rgb(230, 227, 223);
+    font-family: "Red Hat Text", sans-serif;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+#main {
+    max-width: 1440px;
+    margin:100px auto 0 auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: flex-start;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#checkout {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: auto;
+    padding: 40px;
+    width: 900px;
+    border-radius: 18px;
+}
+
+#emptyCheckout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkoutMessage {
+    font-weight: 700;
+    margin-top:15px;
+}
+
+.fullCheckOut {
+    width: 100%;
+    display: none;
+}
+
+#checkoutItems {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+
+.itemName, .itemPrice {
+    font-weight: 500;
+}
+
+.itemName {
+    margin-bottom:5px
+}
+
+
+.checkoutItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+    width: 100%;
+    border-bottom: 1px solid #8f8d8d;
+}
+
+.productCard {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#checkoutTitle {
+    color: hsl(14, 86%, 42%);
+    font-size: 25px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+.totalPrice{
+    font-size:25px;
+    font-weight:700;
+}
+
+.checkoutDescription {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.checkoutClsBtn{
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.productImage {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.productTitle{
+    font-size: 16px;
+}
+
+.productDescription {
+    margin-top:20px;
+}
+
+small, .itemPrice {
+    color: grey;
+}
+
+.addToCartBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 1px solid rgb(81, 62, 38);
+    cursor: pointer;
+}
+
+#itemCounter {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 14px;
+    border-radius: 25px;
+    border: 1px solid rgb(81, 62, 38);
+    cursor: pointer;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    width: 140px;
+    height: 42px;
+}
+
+#itemCounter .decrement,
+#itemCounter .increment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px; /* Gerekirse genişliği ayarlayın */
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+#itemCounter .decrement{
+    padding: 7px 0px;
+}
+
+#itemCounter .increment{
+    padding: 3px 0px;
+}
+
+.orderCount {
+    margin: 0 10px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.productPrice, .itemCount{
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+
+#total{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 100%;
+    align-items: center;
+}
+
+#confirmOrder {
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-radius: 18px;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
