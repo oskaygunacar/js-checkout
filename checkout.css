@@ -34,6 +34,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 40px;
     width: 900px;
     border-radius: 18px;
+    margin-right:25px;
 }
 
 #emptyCheckout{
@@ -215,4 +216,53 @@ small, .itemPrice {
     cursor: pointer;
     width: 100%;
     margin-top: 20px;
+}
+
+
+/* Responsive CSS */
+
+
+/* Tablet 600 - 1024 */
+
+@media screen and (max-width: 1024px) {
+    #main {
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    #products {
+        justify-content: center;
+    }
+
+    h2.title {
+        margin-left:20px;
+    }
+
+    #checkout {
+        width: 50%;
+        max-width: 900px;
+        margin: 30px auto;
+    }
+}
+
+/* Mobile 0 - 500 */
+
+@media screen and (max-width:500px) {
+    #checkout{
+        width: 65%;
+        margin: 30px auto;
+    }
+}
+
+/* Desktop  1025 - 1360 */
+
+@media screen and (min-width: 1025px) and (max-width: 1360px) {
+    #products {
+        justify-content: center;
+    }
+
+    h2.title {
+        margin-left:45px;
+    }
+
 }
